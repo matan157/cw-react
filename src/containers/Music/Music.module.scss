@@ -1,0 +1,42 @@
+@import "../../variables.scss";
+
+.Music {
+  display: flex;
+  background: url("../../assets/BG_2.jpg");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  .Playlist {
+    align-self: center;
+  }
+
+  .MusicLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: white;
+      background-color: $primary-color;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1em;
+      border-radius: 2em;
+      margin: 1em;
+
+      &:hover {
+        background-color: lighten($primary-color, 10%);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    align-items: flex-start;
+    padding: 1em;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+.NavBar {
+  display: flex;
+  padding: 1em;
+  background-color: rgb(48, 48, 48);
+  font-size: 1em;
+  color: white;
+
+  .NavBarBrand {
+    font-family: "Fredoka One", sans-serif;
+  }
+
+  .NavBarToggle {
+    display: none;
+  }
+
+  .NavBarItems {
+    display: flex;
+  }
+
+  .NavBarLink {
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+
+    &:hover {
+      color: darken(white, 5%);
+    }
+  }
+
+  .NavBarItemsRight {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .NavBar {
+    flex-direction: column;
+
+    .NavBarItems.Show {
+      display: flex;
+    }
+
+    .NavBarToggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+    }
+
+    .NavBarItems {
+      flex-direction: column;
+      display: none;
+
+      .NavBarLink {
+        margin-top: 1em;
+      }
+    }
+
+    .NavBarItemsRight {
+      margin-left: 0;
+    }
+  }
+}
