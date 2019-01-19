@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.Footer {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(22, 22, 22);
+  color: $light-color;
+  text-transform: uppercase;
+  font-size: $font-size * 0.8;
+}
