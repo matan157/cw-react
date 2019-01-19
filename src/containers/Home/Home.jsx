@@ -3,6 +3,8 @@ import styles from "./Home.module.scss";
 
 import Card from "../../components/Card";
 
+import jan_first from "../../assets/jan_first.jpg";
+
 class Home extends Component {
   render() {
     return (
@@ -10,20 +12,13 @@ class Home extends Component {
         <Card title="January First Out Now">
           <div className={styles.Embeds}>
             <div>
-              <iframe
-                title="spotify embed"
-                src="https://open.spotify.com/embed/track/3sZtpZFrKTN45E13mn7kHX"
-                height="120"
-                frameBorder="0"
-                allowtransparency="true"
-                allow="encrypted-media"
-              />
+              <img src={jan_first} alt="january first single art" />
             </div>
             <div>
               <iframe
                 title="bandcamp embed"
                 style={{ border: 0, width: "100%", height: "120px" }}
-                src="https://bandcamp.com/EmbeddedPlayer/album=173717983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+                src="https://bandcamp.com/EmbeddedPlayer/album=173717983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/"
                 seamless
               >
                 <a href="http://coldwrecks.bandcamp.com/album/january-first">
