@@ -30,7 +30,10 @@ class Home extends Component {
           <div className={styles.Text}>
             Our second single "January First" off of our upcoming full-length
             "This Could Be Okay" is out now, available on all streaming
-            services.
+            services. Art by{" "}
+            <a href="https://www.mikaelajanepalermo.com/">
+              Mikaela Jane Palermo
+            </a>
           </div>
         </Card>
       </div>

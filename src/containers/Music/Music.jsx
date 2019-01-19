@@ -10,16 +10,6 @@ class Music extends Component {
     return (
       <div className={styles.Music}>
         <Card title="Listen to Cold Wrecks">
-          <div className={styles.Playlist}>
-            <iframe
-              title="releases"
-              src="https://open.spotify.com/embed/user/matan.uchen/playlist/6y4TvzoQTTrIdIYoLADRJ9"
-              height="600"
-              frameBorder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-            />
-          </div>
           <div className={styles.MusicLinks}>
             <a href="https://coldwrecks.bandcamp.com/releases">
               <FontAwesomeIcon icon={["fab", "bandcamp"]} /> Bandcamp
@@ -30,6 +20,17 @@ class Music extends Component {
             <a href="https://itunes.apple.com/us/artist/cold-wrecks/1123737395">
               <FontAwesomeIcon icon={["fab", "apple"]} /> Apple Music
             </a>
+          </div>
+          <div className={styles.Playlist}>
+            <iframe
+              title="soundcloud embed"
+              width="100%"
+              height="450"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/689463174&color=%233dbde4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            />
           </div>
         </Card>
       </div>
