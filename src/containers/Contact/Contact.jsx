@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import styles from "./Contact.module.scss";
 
 import Card from "../../components/Card";

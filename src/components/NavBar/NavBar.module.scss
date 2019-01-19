@@ -1,14 +1,17 @@
 @import "../../variables.scss";
 
+$increased-font-size: $font-size * 1.2;
+
 .NavBar {
   display: flex;
   padding: 1em;
   background-color: rgb(48, 48, 48);
-  font-size: 1em;
+  font-size: $font-size;
   color: white;
 
   .NavBarBrand {
     font-family: "Fredoka One", sans-serif;
+    font-size: $increased-font-size;
   }
 
   .NavBarToggle {
@@ -49,6 +52,7 @@
     }
 
     .NavBarToggle {
+      font-size: $increased-font-size;
       align-self: flex-end;
       display: initial;
       position: absolute;

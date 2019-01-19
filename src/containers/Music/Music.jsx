@@ -14,8 +14,7 @@ class Music extends Component {
             <iframe
               title="releases"
               src="https://open.spotify.com/embed/user/matan.uchen/playlist/6y4TvzoQTTrIdIYoLADRJ9"
-              width="600"
-              height="400"
+              height="600"
               frameBorder="0"
               allowtransparency="true"
               allow="encrypted-media"

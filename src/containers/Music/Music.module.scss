@@ -13,10 +13,20 @@
 
   .Playlist {
     align-self: center;
+
+    iframe {
+      width: 100%;
+      height: 200px;
+
+      @media only screen and (max-width: 768px) {
+        height: 400px;
+      }
+    }
   }
 
   .MusicLinks {
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
     align-items: center;
 
@@ -31,6 +41,12 @@
 
       &:hover {
         background-color: lighten($primary-color, 10%);
+      }
+
+      @media only screen and (max-width: 768px) {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0.5em;
       }
     }
   }
