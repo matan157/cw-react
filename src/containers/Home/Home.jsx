@@ -9,26 +9,26 @@ class Home extends Component {
       <div className={styles.Home}>
         <Card title="January First Out Now">
           <div className={styles.Embeds}>
-            <iframe
-              title="spotify embed"
-              src="https://open.spotify.com/embed/track/3sZtpZFrKTN45E13mn7kHX"
-              width="340"
-              height="340"
-              frameborder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-            />
-
-            <iframe
-              title="bandcamp embed"
-              style={{ border: 0, width: "340px", height: "340px" }}
-              src="https://bandcamp.com/EmbeddedPlayer/album=173717983/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
-              seamless
-            >
-              <a href="http://coldwrecks.bandcamp.com/album/january-first">
-                January First by Cold Wrecks
-              </a>
-            </iframe>
+            <div>
+              <iframe
+                title="spotify embed"
+                src="https://open.spotify.com/embed/track/3sZtpZFrKTN45E13mn7kHX"
+                frameBorder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              />
+            </div>
+            <div>
+              <iframe
+                title="bandcamp embed"
+                src="https://bandcamp.com/EmbeddedPlayer/album=173717983/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"
+                seamless
+              >
+                <a href="http://coldwrecks.bandcamp.com/album/january-first">
+                  January First by Cold Wrecks
+                </a>
+              </iframe>
+            </div>
           </div>
           <div className={styles.Text}>
             Our second single "January First" off of our upcoming full-length
