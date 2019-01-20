@@ -1,0 +1,12 @@
+.Page {
+  display: flex;
+  background-color: rgb(192, 192, 192);
+  background-size: cover;
+  background-position: center;
+  align-items: flex-start;
+  padding: 1em;
+  justify-content: center;
+  width: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}

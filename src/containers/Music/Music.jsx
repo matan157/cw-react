@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Music.module.scss";
 
 import Card from "../../components/Card";
+import Page from "../../components/Page";
 
 class Music extends Component {
   render() {
     return (
-      <div className={styles.Music}>
+      <Page className={styles.Music}>
         <Card title="Listen to Cold Wrecks">
           <div className={styles.MusicLinks}>
             <a href="https://coldwrecks.bandcamp.com/releases">
@@ -33,7 +34,7 @@ class Music extends Component {
             />
           </div>
         </Card>
-      </div>
+      </Page>
     );
   }
 }
