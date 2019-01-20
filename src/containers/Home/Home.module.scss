@@ -1,17 +1,7 @@
 @import "../../variables.scss";
 
 .Home {
-  display: flex;
   background: url("../../assets/BG_1.jpg");
-  background-size: cover;
-  background-position: center;
-  align-items: flex-start;
-  padding: 1em;
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  overflow: scroll;
-  box-sizing: border-box;
 
   .Embeds {
     display: flex;
@@ -27,12 +17,13 @@
         width: 100%;
       }
 
-      img {
-        max-width: 320px;
-      }
-
+      img,
       iframe {
         max-width: 320px;
+
+        @media only screen and (max-width: 400px) {
+          max-width: 295px;
+        }
       }
     }
   }
