@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import styles from "./Home.module.scss";
 
 import Card from "../../components/Card";
+import Page from "../../components/Page";
 
 import jan_first from "../../assets/jan_first.jpg";
 
 class Home extends Component {
   render() {
     return (
-      <div className={styles.Home}>
+      <Page className={styles.Home}>
         <Card title="January First Out Now">
           <div className={styles.Embeds}>
             <div>
@@ -36,7 +37,7 @@ class Home extends Component {
             </a>
           </div>
         </Card>
-      </div>
+      </Page>
     );
   }
 }
