@@ -38,6 +38,9 @@ class NavBar extends Component {
           <NavLink to="/music" className={styles.NavBarLink}>
             music
           </NavLink>
+          <NavLink to="/tour" className={styles.NavBarLink}>
+            tour
+          </NavLink>
           <a
             href="https://www.youtube.com/channel/UCDNlywj1_mxtWwyjB-VMLZA/videos"
             className={styles.NavBarLink}
