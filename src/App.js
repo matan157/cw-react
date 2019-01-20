@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Fragment>
+        <div className={styles.App}>
           <NavBar />
           <div className={styles.Content}>
             <Route path="/music" exact component={Music} />
@@ -22,7 +22,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
           </div>
           <Footer />
-        </Fragment>
+        </div>
       </Router>
     );
   }
